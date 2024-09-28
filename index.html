@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnHub - Professional E-Learning Platform</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <h1 id="logo">
+          Learn<span style="color: var(--secondary-color)">Hub</span>
+        </h1>
+        <div id="menu-icon">☰</div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="showcase">
+      <h1>Elevate Your Learning Experience</h1>
+      <p>
+        Discover a world of knowledge and unlock your potential with our
+        expert-led courses
+      </p>
+      <a href="#courses" class="button">Explore Courses</a>
+    </section>
+
+    <section id="courses" class="container">
+      <h2>Featured Courses</h2>
+      <div class="courses-grid">
+        <div class="course">
+          <div class="course-image" id="web-dev-img"></div>
+          <div class="course-content">
+            <h3>Web Development Mastery</h3>
+            <p>
+              Master the art of creating stunning, responsive websites with
+              modern technologies.
+            </p>
+            <a href="#" class="button">Learn More</a>
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-image" id="data-img"></div>
+          <div class="course-content">
+            <h3>Data Science Fundamentals</h3>
+            <p>
+              Dive into the world of data analysis, machine learning, and
+              predictive modeling.
+            </p>
+            <a href="#" class="button">Learn More</a>
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-image" id="digital-mark-img"></div>
+          <div class="course-content">
+            <h3>Digital Marketing Strategies</h3>
+            <p>
+              Learn to create and implement effective digital marketing
+              campaigns for business growth.
+            </p>
+            <a href="#" class="button">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-section">
+          <h3>About LearnHub</h3>
+          <p>
+            LearnHub is a premier e-learning platform dedicated to providing
+            high-quality online courses to learners worldwide.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@learnhub.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+          <p>Address: 123 Education St, E-Learning City, EL 12345, Country</p>
+        </div>
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Stay updated with our latest courses and offers.</p>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              style="
+                padding: 10px;
+                margin-top: 10px;
+                width: 100%;
+                border: none;
+                border-radius: 5px;
+              "
+            />
+            <button
+              type="submit"
+              class="button"
+              style="margin-top: 10px; width: 100%"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 LearnHub. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"
+            ><img class="social-img" src="./assets/logos/facebook-logo.png" alt="Facebook"
+          /></a>
+          <a href="#" aria-label="Twitter"
+            ><img class="social-img" src="/./assets/logos/twitter-sign.png" alt="Twitter"
+          /></a>
+          <a href="#" aria-label="LinkedIn"
+            ><img  class="social-img" src="/./assets/logos/linkedin-logo.png" alt="LinkedIn"
+          /></a>
+          <a href="#" aria-label="Instagram"
+            ><img class="social-img" src="./assets/logos/instagram-symbol.png" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("menu-icon")
+        .addEventListener("click", function () {
+          document.querySelector("nav ul").classList.toggle("show");
+        });
+    </script>
+  </body>
+</html>
