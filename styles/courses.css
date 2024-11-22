@@ -1,0 +1,173 @@
+/* styles/course.css */
+.course-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.course-header {
+    margin-bottom: 2rem;
+}
+
+.course-header h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.course-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+}
+
+/* Chapters Styling */
+.chapters {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+}
+
+.chapter {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1.5rem;
+}
+
+.chapter:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.chapter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.chapter-header h3 {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.status {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+}
+
+.chapter.completed .status {
+    background: #e6fff0;
+    color: #00b341;
+}
+
+.chapter.in-progress .status {
+    background: #fff3e6;
+    color: #ff9900;
+}
+
+.lessons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-left: 1.5rem;
+}
+
+.lesson {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #666;
+    transition: background 0.3s ease;
+}
+
+.lesson:hover {
+    background: #f5f5f5;
+}
+
+.lesson.completed {
+    color: #00b341;
+}
+
+.lesson.in-progress {
+    color: #ff9900;
+}
+
+.duration {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Sidebar Styling */
+.course-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.course-info, .resources {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+}
+
+.course-info h3, .resources h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.course-info ul, .resources ul {
+    list-style: none;
+}
+
+.course-info li, .resources li {
+    margin-bottom: 0.8rem;
+}
+
+.resources a {
+    text-decoration: none;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.resources a:hover {
+    color: #ff69b4;
+}
+
+/* Progress Bar */
+.progress-container {
+    background: #f0f0f0;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.progress-bar {
+    background: #ff69b4;
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-sidebar {
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,62 @@
+/* styles/dashboard.css */
+.dashboard {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.dashboard h1 {
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.course-progress {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.course-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.course-item h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.progress-container {
+    background: #f0f0f0;
+    border-radius: 10px;
+    height: 20px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: #ff69b4;
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 0.8rem;
+    transition: width 0.3s ease;
+}
+
+.continue-btn {
+    display: inline-block;
+    background: #ff69b4;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.continue-btn:hover {
+    background: #ff4da6;
+}
